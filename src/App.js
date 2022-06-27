@@ -1,16 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import React from 'react';
 import Count from './Count';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Count />
-      </header>
-    </div>
-  );
+class App extends React.Component {
+    render() {
+        return (
+            <div className="App">
+                <header className="App-header">
+                    <img src={logo} className="App-logo" alt="logo" />
+                </header>
+            </div>
+        );
+    }
 }
 
-export default App;
+export default AppClass;
+
+// TODO : Inclure le composant Count sous le logo
