@@ -1,5 +1,4 @@
 import React from "react";
-// TODO : Importer le composant Greeting
 
 export default class CountClass extends React.Component {
     constructor(props) {
