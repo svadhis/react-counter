@@ -1,19 +1,27 @@
 import React from "react";
+import Greeting from "./Greeting";
 
 export default class Count extends React.Component {
     constructor(props) {
         super(props);
+        this.state ={
+            count: 0,
+        }
     }
 
     increment = () => {
+        this.setState ({
+            count: this.state.count + 1
+        })
+
     }
 
     render() {
         return (
             <div>
-                <p></p>
-                <button onClick={}>Increment</button>
-                <Greeting />
+                <p>{this.state.count}</p>
+                <button onClick={this.increment}>Increment</button>
+                <Greeting count={this.state.count}/>
             </div>
         );
     }
